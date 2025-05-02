@@ -1,5 +1,5 @@
 {
-  "name": "minecraft-site",
+  "name": "personal-portfolio-vitepress",
   "version": "1.0.0",
   "scripts": {
     "docs:dev": "vitepress dev docs",
