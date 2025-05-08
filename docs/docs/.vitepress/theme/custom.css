@@ -1,0 +1,9 @@
+/* Sidebar padding 與右側內容區距離 */
+.VPSidebar {
+  padding-left: 24px;
+}
+
+/* 主內容不要太貼邊（可選） */
+.VPContent {
+  padding-left: 12px;
+}
