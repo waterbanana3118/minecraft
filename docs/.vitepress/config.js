@@ -5,16 +5,21 @@ export default {
 
   themeConfig: {
     nav: [
-      { text: "首頁", link: "/" },
-      { text: "滑動條", link: "/slider" }
+      { text: "首頁", link: "/" }
+      // ❌ 已移除滑動條項目
     ],
     sidebar: [
-      { text: "基礎設定", link: "/basics" },
-      { text: "進階設定", link: "/advanced" },
-      { text: "玩家操作", link: "/players" },
-      { text: "效果藥水", link: "/effects" },
-      { text: "生物召喚", link: "/summon" },
-      { text: "附魔道具", link: "/enchantments" }
+      {
+        text: "📚 指令",
+        items: [
+          { text: "基礎設定", link: "/basics" },
+          { text: "進階設定", link: "/advanced" },
+          { text: "玩家操作", link: "/players" },
+          { text: "效果藥水", link: "/effects" },
+          { text: "生物召喚", link: "/summon" },
+          { text: "附魔道具", link: "/enchantments" }
+        ]
+      }
     ],
     outline: [2, 3],
     outlineTitle: "目錄",
