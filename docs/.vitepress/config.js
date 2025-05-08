@@ -24,12 +24,17 @@ export default {
       {
         text: "Minecraft",
         items: [
-          { text: "常用指令", link: "/" }
+          { text: "基礎設定", link: "/basics" },
+          { text: "進階設定", link: "/advanced" },
+          { text: "玩家操作", link: "/players" },
+          { text: "效果藥水", link: "/effects" },
+          { text: "生物召喚", link: "/summon" },
+          { text: "附魔道具", link: "/enchantments" }
         ]
       }
     ],
     outline: [2, 3],
-    outlineTitle: "頁面導覽", // ✅ ← 這就是加的地方
+    outlineTitle: "目錄",
     socialLinks: [
       { icon: "github", link: "https://github.com/waterbanana3118/minecraft" }
     ]
