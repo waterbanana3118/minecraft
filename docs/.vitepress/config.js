@@ -1,5 +1,5 @@
 export default {
-  title: "waterbanana3118 Components",
+  title: "Minecraft 指令小百科",
   description: "使用 VitePress 製作的元件與 Minecraft 指令教學站",
   base: "/minecraft/",
 
