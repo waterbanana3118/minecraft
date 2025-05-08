@@ -1,24 +1,20 @@
-export default {
-  title: "waterbanana3118 Components",
-  description: "使用 VitePress 製作的 UI 文件網站",
-  base: "/minecraft/",
-
-  themeConfig: {
-    nav: [
-      { text: '首頁', link: '/' },
-      { text: '滑動條', link: '/slider' }
-    ],
-    sidebar: [
-      {
-        text: '元件',
-        items: [
-          { text: '固軸的滑動條', link: '/slider' }
-        ]
-      }
-    ],
-    outline: [2, 3],
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/waterbanana3118/minecraft' }
+sidebar: [
+  {
+    text: '前言',
+    items: [
+      { text: '網站簡介', link: '/' }, // 連到 index.md
+    ]
+  },
+  {
+    text: '元件',
+    items: [
+      { text: '固軸的滑動條', link: '/slider' }
+    ]
+  },
+  {
+    text: 'Minecraft',
+    items: [
+      { text: '常用指令', link: '/' } // 你放在首頁就可以這樣寫
     ]
   }
-}
+]
