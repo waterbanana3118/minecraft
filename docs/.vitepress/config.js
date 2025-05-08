@@ -29,6 +29,7 @@ export default {
       }
     ],
     outline: [2, 3],
+    outlineTitle: "頁面導覽", // ✅ ← 這就是加的地方
     socialLinks: [
       { icon: "github", link: "https://github.com/waterbanana3118/minecraft" }
     ]
