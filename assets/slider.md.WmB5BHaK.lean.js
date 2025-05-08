@@ -1,1 +1,0 @@
-import{_ as a,c as t,o as r,ae as i}from"./chunks/framework.D5xMYfqO.js";const p=JSON.parse('{"title":"固軸滑動條元件","description":"","frontmatter":{},"headers":[],"relativePath":"slider.md","filePath":"slider.md"}'),o={name:"slider.md"};function l(s,e,d,n,c,_){return r(),t("div",null,e[0]||(e[0]=[i("",5)]))}const u=a(o,[["render",l]]);export{p as __pageData,u as default};
