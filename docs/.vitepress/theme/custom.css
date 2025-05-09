@@ -9,6 +9,6 @@
 }
 
 /* 自訂 sidebar 連結字體大小 */
-.VPSidebarItem .text {
-  font-size: 80px; /* 或你可以試試 17px / 18px */
+.VPSidebar .VPSidebarItem .VPLink.link {
+  font-size: 20px; /* 或你可以試試 17px / 18px */
 }
