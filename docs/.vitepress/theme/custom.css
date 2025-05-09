@@ -8,7 +8,8 @@
   padding-left: 12px;
 }
 
-/* 自訂 sidebar 連結字體大小 */
-.VPSidebarItem.level-1.is-link .text {
-  font-size: 22px; /* 或你可以試試 17px / 18px */
+/* ✅ 強化 sidebar 字體樣式，確保能蓋過 VitePress 預設 CSS */
+.VPSidebarItem.level-1.is-link > a > .text {
+  font-size: 22px !important;
+  font-weight: 500 !important;
 }
