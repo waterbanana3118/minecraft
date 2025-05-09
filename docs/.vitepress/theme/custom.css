@@ -8,8 +8,16 @@
   padding-left: 12px;
 }
 
-/* ✅ 強化 sidebar 字體樣式，確保能蓋過 VitePress 預設 CSS */
+/* ✅ 強化 sidebar 項目連結字體樣式 */
 .VPSidebarItem.level-1.is-link > a > .text {
   font-size: 22px !important;
-  font-weight: 500 !important;
+}
+
+/* ✅ 自訂群組標題（像「📚 指令」）的字體樣式 */
+.VPSidebar .VPSidebarGroup .title {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  color: #ffffff !important;
+  margin-top: 12px;
+  margin-bottom: 8px;
 }
