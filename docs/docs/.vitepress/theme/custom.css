@@ -7,3 +7,8 @@
 .VPContent {
   padding-left: 12px;
 }
+
+/* 自訂 sidebar 連結字體大小 */
+.VPSidebarItem .text {
+  font-size: 20px; /* 或你可以試試 17px / 18px */
+}
