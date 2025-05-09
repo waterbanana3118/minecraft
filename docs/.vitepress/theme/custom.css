@@ -10,7 +10,7 @@
 
 /* ✅ 強化 sidebar 項目連結字體樣式 */
 .VPSidebarItem.level-1.is-link > a > .text {
-  font-size: 22px !important;
+  font-size: 30px !important;
 }
 
 /* ✅ 自訂群組標題（像「📚 指令」）的字體樣式 */
