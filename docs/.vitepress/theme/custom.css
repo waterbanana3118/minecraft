@@ -1,29 +1,32 @@
-/* ✅ 側邊欄整體區塊設定：讓整體偏右一點，不會太貼左邊 */
+/* ✅ 側邊欄整體樣式微調（選單靠右一點） */
 .VPSidebar {
-  padding-left: 24px; /* 左側邊距為 24px，可依喜好微調 */
+  padding-left: 24px;
 }
 
-/* ✅ 主內容區塊靠左一點，避免留白太多 */
+/* ✅ 主內容區域稍微靠左一點 */
 .VPContent {
-  padding-left: 12px; /* 主內容與左側邊界的間距，數字越小越靠左 */
+  padding-left: 12px;
 }
 
-/* ✅ 側邊欄每個選單項目（像是「基礎設定」、「進階設定」）的樣式 */
+/* ✅ 側邊欄項目文字大小（例如：基礎設定、進階設定） */
 div.VPSidebarItem.level-1.is-link > a > p.text {
-  font-size: 50px !important;   /* 字體大小設定為 20px，可改成你想要的 22px 或 18px */
-  font-weight: 500 !important;  /* 字重設定為 500，中等偏粗 */
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  color: white !important;
 }
 
-/* ✅ 側邊欄的群組標題（像是「📚 指令」）樣式 */
+/* ✅ 側邊欄群組標題（像 📚 指令） */
 .VPSidebar .VPSidebarGroup .title {
-  font-size: 30px !important;     /* 群組標題字體大小 */
-  font-weight: 600 !important;    /* 群組標題字體加粗 */
-  color: #ffffff !important;      /* 群組標題顏色設為白色 */
-  margin-top: 20px;               /* 群組標題與上方間距 */
-  margin-bottom: 10px;            /* 群組標題與下方項目之間的距離 */
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  color: #ffffff !important;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
+
+/* ✅ 偵測是否有成功載入 custom.css，用來除錯 */
 body::before {
-  content: "🧪 custom.css loaded";
+  content: "🧪 custom.css 成功載入！";
   display: block;
   color: yellow;
   font-weight: bold;
