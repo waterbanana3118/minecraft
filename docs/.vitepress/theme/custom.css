@@ -22,3 +22,10 @@
   margin-top: 20px;               /* 群組標題與上方間距 */
   margin-bottom: 10px;            /* 群組標題與下方項目之間的距離 */
 }
+body::before {
+  content: "🧪 custom.css loaded";
+  display: block;
+  color: yellow;
+  font-weight: bold;
+  padding: 10px;
+}
