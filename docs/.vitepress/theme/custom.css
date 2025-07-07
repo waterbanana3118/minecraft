@@ -16,7 +16,7 @@
 
 /* ✅ 側邊欄的群組標題（像是「📚 指令」）樣式 */
 .VPSidebar .VPSidebarGroup .title {
-  font-size: 18px !important;     /* 群組標題字體大小 */
+  font-size: 30px !important;     /* 群組標題字體大小 */
   font-weight: 600 !important;    /* 群組標題字體加粗 */
   color: #ffffff !important;      /* 群組標題顏色設為白色 */
   margin-top: 20px;               /* 群組標題與上方間距 */
