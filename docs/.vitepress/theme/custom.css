@@ -8,12 +8,13 @@
   padding-left: 12px;
 }
 
-/* ✅ 強化 sidebar 項目連結字體樣式 */
+/* ✅ 側邊欄項目（如：基礎設定）字體樣式 */
 .VPSidebarItem.level-1.is-link > a > .text {
-  font-size: 30px !important;
+  font-size: 20px !important;  /* 可依需求改大如 22px / 24px */
+  font-weight: 500 !important;
 }
 
-/* ✅ 自訂群組標題（像「📚 指令」）的字體樣式 */
+/* ✅ 側邊欄群組標題（如：📚 指令）字體樣式 */
 .VPSidebar .VPSidebarGroup .title {
   font-size: 18px !important;
   font-weight: 600 !important;
