@@ -10,7 +10,7 @@
 
 /* ✅ 側邊欄每個選單項目（像是「基礎設定」、「進階設定」）的樣式 */
 .VPSidebarItem.level-1.is-link > a > .text {
-  font-size: 30px !important;   /* 字體大小設定為 20px，可改成你想要的 22px 或 18px */
+  font-size: 50px !important;   /* 字體大小設定為 20px，可改成你想要的 22px 或 18px */
   font-weight: 500 !important;  /* 字重設定為 500，中等偏粗 */
 }
 
