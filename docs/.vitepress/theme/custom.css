@@ -8,13 +8,13 @@
   padding-left: 12px;
 }
 
-/* ✅ 側邊欄項目文字大小（例如：基礎設定、進階設定） */
-div.VPSidebarItem.level-1.is-link .text {
+/* ✅ 側邊欄項目文字樣式（例如：基礎設定、進階設定） */
+.VPSidebarItem.level-1.is-link .text {
   font-size: 18px !important;
   font-weight: 500 !important;
   color: white !important;
 
-  /* ✅ 加上底部分隔線 */
+  /* ✅ 分隔線與間距 */
   border-bottom: 1px solid #444 !important;
   padding-bottom: 6px;
   margin-bottom: 6px;
@@ -29,12 +29,19 @@ div.VPSidebarItem.level-1.is-link .text {
   margin-bottom: 10px;
 }
 
-/* ✅ 讓側邊欄連結只包住文字本身，不擴大可點擊範圍 */
+/* ✅ 精準控制側邊欄連結的可點擊範圍，限制只在文字上 */
 .VPSidebarItem.level-1.is-link > a {
-  display: inline-block !important; /* 原本是 block，會整行都能點 */
-  width: auto !important;
-  padding: 0 !important; /* 防止額外空間 */
+  display: inline-flex !important;     /* 不要讓整行都能點擊 */
+  align-items: center;
+  padding: 0 !important;
   margin: 0 !important;
+  width: auto !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.VPSidebarItem.level-1.is-link > a::before {
+  display: none !important;            /* 如果有 hover 背景陰影也清除 */
 }
 
 /* ✅ 偵測是否有成功載入 custom.css，用來除錯 */
