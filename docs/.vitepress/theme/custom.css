@@ -9,16 +9,16 @@
 }
 
 /* ✅ 側邊欄項目文字大小（例如：基礎設定、進階設定） */
-div.VPSidebarItem.level-1.is-link > a > p.text {
-  font-size: 90px !important;
-  font-weight: 600 !important;
+div.VPSidebarItem.level-1.is-link .text {
+  font-size: 50px !important;
+  font-weight: 500 !important;
   color: white !important;
 }
 
 /* ✅ 側邊欄群組標題（像 📚 指令） */
 .VPSidebar .VPSidebarGroup .title {
-  font-size: 90px !important;
-  font-weight: 700 !important;
+  font-size: 50px !important;
+  font-weight: 600 !important;
   color: #ffffff !important;
   margin-top: 20px;
   margin-bottom: 10px;
