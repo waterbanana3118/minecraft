@@ -29,6 +29,14 @@ div.VPSidebarItem.level-1.is-link .text {
   margin-bottom: 10px;
 }
 
+/* ✅ 讓側邊欄連結只包住文字本身，不擴大可點擊範圍 */
+.VPSidebarItem.level-1.is-link > a {
+  display: inline-block !important; /* 原本是 block，會整行都能點 */
+  width: auto !important;
+  padding: 0 !important; /* 防止額外空間 */
+  margin: 0 !important;
+}
+
 /* ✅ 偵測是否有成功載入 custom.css，用來除錯 */
 body::before {
   content: "🧪 custom.css 成功載入！";
