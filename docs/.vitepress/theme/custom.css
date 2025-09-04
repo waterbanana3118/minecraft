@@ -13,6 +13,11 @@ div.VPSidebarItem.level-1.is-link .text {
   font-size: 18px !important;
   font-weight: 500 !important;
   color: white !important;
+
+  /* ✅ 加上底部分隔線 */
+  border-bottom: 1px solid #444 !important;
+  padding-bottom: 6px;
+  margin-bottom: 6px;
 }
 
 /* ✅ 側邊欄群組標題（像 📚 指令） */
