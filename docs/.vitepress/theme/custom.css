@@ -12,25 +12,22 @@
 .VPSidebarItem.level-1.is-link .text {
   font-size: 18px !important;
   font-weight: 500 !important;
-}
-
-  /* ✅ 分隔線與間距 */
-  padding-bottom: 6px;
-  margin-bottom: 6px;
+  display: block !important; /* 🔧 加這行讓底線可見 */
+  padding-bottom: 6px !important;
+  margin-bottom: 6px !important;
 }
 
 /* ✅ 側邊欄群組標題（像 📚 指令） */
 .VPSidebar .VPSidebarGroup .title {
   font-size: 18px !important;
   font-weight: 600 !important;
-  color: #ffffff !important;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
 /* ✅ 精準控制側邊欄連結的可點擊範圍，限制只在文字上 */
 .VPSidebarItem.level-1.is-link > a {
-  display: inline-flex !important;     /* 不要讓整行都能點擊 */
+  display: inline-flex !important;
   align-items: center;
   padding: 0 !important;
   margin: 0 !important;
@@ -39,30 +36,27 @@
   box-shadow: none !important;
 }
 
+/* ✅ 清除 hover 背景 */
 .VPSidebarItem.level-1.is-link > a::before {
-  display: none !important;            /* 如果有 hover 背景陰影也清除 */
+  display: none !important;
 }
-/* ✅ 暗色主題時，顯示白字 */
+
+/* ✅ 暗色主題：白字 + 深灰分隔線 */
 html[data-theme="dark"] .VPSidebarItem.level-1.is-link .text,
 html[data-theme="dark"] .VPSidebar .VPSidebarGroup .title {
   color: white !important;
 }
-
-/* ✅ 亮色主題時，顯示深色字 */
-html[data-theme="light"] .VPSidebarItem.level-1.is-link .text,
-html[data-theme="light"] .VPSidebar .VPSidebarGroup .title {
-  color: #222 !important;  /* 你也可以改成 #333 / #444 / black */
-}
-/* ✅ 暗色主題：白字 + 深灰分隔線 */
 html[data-theme="dark"] .VPSidebarItem.level-1.is-link .text {
-  color: white !important;
   border-bottom: 1px solid #444 !important;
 }
 
 /* ✅ 亮色主題：深色字 + 淺灰分隔線 */
-html[data-theme="light"] .VPSidebarItem.level-1.is-link .text {
+html[data-theme="light"] .VPSidebarItem.level-1.is-link .text,
+html[data-theme="light"] .VPSidebar .VPSidebarGroup .title {
   color: #222 !important;
-  border-bottom: 1px solid #ccc !important; /* 可以改成 #aaa 或 #bbb */
+}
+html[data-theme="light"] .VPSidebarItem.level-1.is-link .text {
+  border-bottom: 1px solid #ccc !important;
 }
 
 /* ✅ 偵測是否有成功載入 custom.css，用來除錯 */
