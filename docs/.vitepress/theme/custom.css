@@ -12,7 +12,7 @@
 .VPSidebarItem.level-1.is-link .text {
   font-size: 18px !important;
   font-weight: 500 !important;
-  color: white !important;
+}
 
   /* ✅ 分隔線與間距 */
   border-bottom: 1px solid #444 !important;
@@ -42,6 +42,17 @@
 
 .VPSidebarItem.level-1.is-link > a::before {
   display: none !important;            /* 如果有 hover 背景陰影也清除 */
+}
+/* ✅ 暗色主題時，顯示白字 */
+html[data-theme="dark"] .VPSidebarItem.level-1.is-link .text,
+html[data-theme="dark"] .VPSidebar .VPSidebarGroup .title {
+  color: white !important;
+}
+
+/* ✅ 亮色主題時，顯示深色字 */
+html[data-theme="light"] .VPSidebarItem.level-1.is-link .text,
+html[data-theme="light"] .VPSidebar .VPSidebarGroup .title {
+  color: #222 !important;  /* 你也可以改成 #333 / #444 / black */
 }
 
 /* ✅ 偵測是否有成功載入 custom.css，用來除錯 */
