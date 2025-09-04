@@ -15,7 +15,6 @@
 }
 
   /* ✅ 分隔線與間距 */
-  border-bottom: 1px solid #444 !important;
   padding-bottom: 6px;
   margin-bottom: 6px;
 }
@@ -53,6 +52,17 @@ html[data-theme="dark"] .VPSidebar .VPSidebarGroup .title {
 html[data-theme="light"] .VPSidebarItem.level-1.is-link .text,
 html[data-theme="light"] .VPSidebar .VPSidebarGroup .title {
   color: #222 !important;  /* 你也可以改成 #333 / #444 / black */
+}
+/* ✅ 暗色主題：白字 + 深灰分隔線 */
+html[data-theme="dark"] .VPSidebarItem.level-1.is-link .text {
+  color: white !important;
+  border-bottom: 1px solid #444 !important;
+}
+
+/* ✅ 亮色主題：深色字 + 淺灰分隔線 */
+html[data-theme="light"] .VPSidebarItem.level-1.is-link .text {
+  color: #222 !important;
+  border-bottom: 1px solid #ccc !important; /* 可以改成 #aaa 或 #bbb */
 }
 
 /* ✅ 偵測是否有成功載入 custom.css，用來除錯 */
